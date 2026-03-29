@@ -1,3 +1,5 @@
+import RsvpForm from './components/RSVP';
+
 export default function Home() {
   return (
     <main style={{
@@ -10,6 +12,7 @@ export default function Home() {
     }}>
       <h1>Nils & Nora 💍</h1>
       <p>Vi gifter oss hösten 2026</p>
+       <RsvpForm />
     </main>
   );
 }
