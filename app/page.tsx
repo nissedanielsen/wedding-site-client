@@ -9,7 +9,7 @@ export default function Home() {
       fontFamily: "sans-serif"
     }}>
       <h1>Nils & Nora 💍</h1>
-      <p>Vi gifter oss sommaren 2026</p>
+      <p>Vi gifter oss hösten 2026</p>
     </main>
   );
 }
