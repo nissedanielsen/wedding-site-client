@@ -18,23 +18,25 @@ export default function RsvpForm() {
 
   if (submitted) return <p>Tack för ditt svar! 💍</p>;
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <input
-        placeholder="Ditt namn"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        required
-      />
-      <label>
+return (
+    <div id="osa"> 
+      <form onSubmit={handleSubmit}>
         <input
-          type="checkbox"
-          checked={attending}
-          onChange={(e) => setAttending(e.target.checked)}
+          placeholder="Ditt namn"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
         />
-        Jag kommer
-      </label>
-      <button type="submit">Skicka RSVP</button>
-    </form>
+        <label>
+          <input
+            type="checkbox"
+            checked={attending}
+            onChange={(e) => setAttending(e.target.checked)}
+          />
+          Jag kommer
+        </label>
+        <button type="submit">Skicka RSVP</button>
+      </form>
+    </div>
   );
 }
